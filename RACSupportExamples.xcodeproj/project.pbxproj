@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAB670C41982BB4900838DA0 /* SVProgressHUD+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB670C31982BB4900838DA0 /* SVProgressHUD+RACSupport.m */; };
+		CAB670C71982BB7C00838DA0 /* NJKWebViewProgress+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB670C61982BB7C00838DA0 /* NJKWebViewProgress+RACSupport.m */; };
+		CAB670CD1982DE0000838DA0 /* UIButton+MeijinSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB670CC1982DE0000838DA0 /* UIButton+MeijinSupport.m */; };
 		CAB68AC11982B60600916EE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB68AC01982B60600916EE2 /* Foundation.framework */; };
 		CAB68AC31982B60600916EE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB68AC21982B60600916EE2 /* CoreGraphics.framework */; };
 		CAB68AC51982B60600916EE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB68AC41982B60600916EE2 /* UIKit.framework */; };
@@ -14,13 +17,17 @@
 		CAB68ACD1982B60600916EE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB68ACC1982B60600916EE2 /* main.m */; };
 		CAB68AD11982B60600916EE2 /* RCSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB68AD01982B60600916EE2 /* RCSAppDelegate.m */; };
 		CAB68AD41982B60600916EE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB68AD21982B60600916EE2 /* Main.storyboard */; };
-		CAB68AD71982B60600916EE2 /* RCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB68AD61982B60600916EE2 /* RCSViewController.m */; };
 		CAB68AD91982B60600916EE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB68AD81982B60600916EE2 /* Images.xcassets */; };
 		CAB68AE01982B60600916EE2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB68ADF1982B60600916EE2 /* XCTest.framework */; };
 		CAB68AE11982B60600916EE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB68AC01982B60600916EE2 /* Foundation.framework */; };
 		CAB68AE21982B60600916EE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB68AC41982B60600916EE2 /* UIKit.framework */; };
 		CAB68AEA1982B60600916EE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CAB68AE81982B60600916EE2 /* InfoPlist.strings */; };
 		CAB68AEC1982B60600916EE2 /* RACSupportExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB68AEB1982B60600916EE2 /* RACSupportExamplesTests.m */; };
+		CAD0103E1982ED4000BC6EF7 /* RCSMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD0103D1982ED4000BC6EF7 /* RCSMenuViewController.m */; };
+		CAD010411982EE9200BC6EF7 /* RCSSVProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD010401982EE9200BC6EF7 /* RCSSVProgressHUDViewController.m */; };
+		CAD010441982EF6A00BC6EF7 /* RCSNJKWebViewProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD010431982EF6A00BC6EF7 /* RCSNJKWebViewProgressViewController.m */; };
+		CAD010471982F22500BC6EF7 /* RCSTakahashiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD010461982F22500BC6EF7 /* RCSTakahashiViewController.m */; };
+		E816F523A2B6421AA72A221E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3BD168C20043ADBC18F100 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04869B37281A468E938BBCB8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		5C3BD168C20043ADBC18F100 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB670C21982BB4900838DA0 /* SVProgressHUD+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+RACSupport.h"; sourceTree = "<group>"; };
+		CAB670C31982BB4900838DA0 /* SVProgressHUD+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+RACSupport.m"; sourceTree = "<group>"; };
+		CAB670C51982BB7C00838DA0 /* NJKWebViewProgress+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NJKWebViewProgress+RACSupport.h"; sourceTree = "<group>"; };
+		CAB670C61982BB7C00838DA0 /* NJKWebViewProgress+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NJKWebViewProgress+RACSupport.m"; sourceTree = "<group>"; };
+		CAB670CB1982DE0000838DA0 /* UIButton+MeijinSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MeijinSupport.h"; sourceTree = "<group>"; };
+		CAB670CC1982DE0000838DA0 /* UIButton+MeijinSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MeijinSupport.m"; sourceTree = "<group>"; };
 		CAB68ABD1982B60600916EE2 /* RACSupportExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACSupportExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB68AC01982B60600916EE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CAB68AC21982B60600916EE2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +60,20 @@
 		CAB68ACF1982B60600916EE2 /* RCSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCSAppDelegate.h; sourceTree = "<group>"; };
 		CAB68AD01982B60600916EE2 /* RCSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCSAppDelegate.m; sourceTree = "<group>"; };
 		CAB68AD31982B60600916EE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CAB68AD51982B60600916EE2 /* RCSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCSViewController.h; sourceTree = "<group>"; };
-		CAB68AD61982B60600916EE2 /* RCSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCSViewController.m; sourceTree = "<group>"; };
 		CAB68AD81982B60600916EE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CAB68ADE1982B60600916EE2 /* RACSupportExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACSupportExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB68ADF1982B60600916EE2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CAB68AE71982B60600916EE2 /* RACSupportExamplesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACSupportExamplesTests-Info.plist"; sourceTree = "<group>"; };
 		CAB68AE91982B60600916EE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CAB68AEB1982B60600916EE2 /* RACSupportExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSupportExamplesTests.m; sourceTree = "<group>"; };
+		CAD0103C1982ED4000BC6EF7 /* RCSMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSMenuViewController.h; sourceTree = "<group>"; };
+		CAD0103D1982ED4000BC6EF7 /* RCSMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSMenuViewController.m; sourceTree = "<group>"; };
+		CAD0103F1982EE9200BC6EF7 /* RCSSVProgressHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSSVProgressHUDViewController.h; sourceTree = "<group>"; };
+		CAD010401982EE9200BC6EF7 /* RCSSVProgressHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSSVProgressHUDViewController.m; sourceTree = "<group>"; };
+		CAD010421982EF6A00BC6EF7 /* RCSNJKWebViewProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSNJKWebViewProgressViewController.h; sourceTree = "<group>"; };
+		CAD010431982EF6A00BC6EF7 /* RCSNJKWebViewProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSNJKWebViewProgressViewController.m; sourceTree = "<group>"; };
+		CAD010451982F22500BC6EF7 /* RCSTakahashiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSTakahashiViewController.h; sourceTree = "<group>"; };
+		CAD010461982F22500BC6EF7 /* RCSTakahashiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSTakahashiViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +84,7 @@
 				CAB68AC31982B60600916EE2 /* CoreGraphics.framework in Frameworks */,
 				CAB68AC51982B60600916EE2 /* UIKit.framework in Frameworks */,
 				CAB68AC11982B60600916EE2 /* Foundation.framework in Frameworks */,
+				E816F523A2B6421AA72A221E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +108,7 @@
 				CAB68AE51982B60600916EE2 /* RACSupportExamplesTests */,
 				CAB68ABF1982B60600916EE2 /* Frameworks */,
 				CAB68ABE1982B60600916EE2 /* Products */,
+				04869B37281A468E938BBCB8 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +128,7 @@
 				CAB68AC21982B60600916EE2 /* CoreGraphics.framework */,
 				CAB68AC41982B60600916EE2 /* UIKit.framework */,
 				CAB68ADF1982B60600916EE2 /* XCTest.framework */,
+				5C3BD168C20043ADBC18F100 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,11 +136,18 @@
 		CAB68AC61982B60600916EE2 /* RACSupportExamples */ = {
 			isa = PBXGroup;
 			children = (
+				CAB68AF51982B64400916EE2 /* RACSupports */,
 				CAB68ACF1982B60600916EE2 /* RCSAppDelegate.h */,
 				CAB68AD01982B60600916EE2 /* RCSAppDelegate.m */,
+				CAD0103C1982ED4000BC6EF7 /* RCSMenuViewController.h */,
+				CAD0103D1982ED4000BC6EF7 /* RCSMenuViewController.m */,
+				CAD0103F1982EE9200BC6EF7 /* RCSSVProgressHUDViewController.h */,
+				CAD010401982EE9200BC6EF7 /* RCSSVProgressHUDViewController.m */,
+				CAD010421982EF6A00BC6EF7 /* RCSNJKWebViewProgressViewController.h */,
+				CAD010431982EF6A00BC6EF7 /* RCSNJKWebViewProgressViewController.m */,
+				CAD010451982F22500BC6EF7 /* RCSTakahashiViewController.h */,
+				CAD010461982F22500BC6EF7 /* RCSTakahashiViewController.m */,
 				CAB68AD21982B60600916EE2 /* Main.storyboard */,
-				CAB68AD51982B60600916EE2 /* RCSViewController.h */,
-				CAB68AD61982B60600916EE2 /* RCSViewController.m */,
 				CAB68AD81982B60600916EE2 /* Images.xcassets */,
 				CAB68AC71982B60600916EE2 /* Supporting Files */,
 			);
@@ -152,6 +183,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CAB68AF51982B64400916EE2 /* RACSupports */ = {
+			isa = PBXGroup;
+			children = (
+				CAB670C21982BB4900838DA0 /* SVProgressHUD+RACSupport.h */,
+				CAB670C31982BB4900838DA0 /* SVProgressHUD+RACSupport.m */,
+				CAB670C51982BB7C00838DA0 /* NJKWebViewProgress+RACSupport.h */,
+				CAB670C61982BB7C00838DA0 /* NJKWebViewProgress+RACSupport.m */,
+				CAB670CB1982DE0000838DA0 /* UIButton+MeijinSupport.h */,
+				CAB670CC1982DE0000838DA0 /* UIButton+MeijinSupport.m */,
+			);
+			path = RACSupports;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAB68AEF1982B60600916EE2 /* Build configuration list for PBXNativeTarget "RACSupportExamples" */;
 			buildPhases = (
+				240DCA337EA2432AA9DEE78A /* Check Pods Manifest.lock */,
 				CAB68AB91982B60600916EE2 /* Sources */,
 				CAB68ABA1982B60600916EE2 /* Frameworks */,
 				CAB68ABB1982B60600916EE2 /* Resources */,
+				F48A634B6BBA4FD9967269A6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,14 +291,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		240DCA337EA2432AA9DEE78A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F48A634B6BBA4FD9967269A6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CAB68AB91982B60600916EE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB68AD71982B60600916EE2 /* RCSViewController.m in Sources */,
+				CAB670CD1982DE0000838DA0 /* UIButton+MeijinSupport.m in Sources */,
+				CAD010471982F22500BC6EF7 /* RCSTakahashiViewController.m in Sources */,
+				CAD010411982EE9200BC6EF7 /* RCSSVProgressHUDViewController.m in Sources */,
+				CAB670C71982BB7C00838DA0 /* NJKWebViewProgress+RACSupport.m in Sources */,
 				CAB68ACD1982B60600916EE2 /* main.m in Sources */,
+				CAB670C41982BB4900838DA0 /* SVProgressHUD+RACSupport.m in Sources */,
+				CAD0103E1982ED4000BC6EF7 /* RCSMenuViewController.m in Sources */,
 				CAB68AD11982B60600916EE2 /* RCSAppDelegate.m in Sources */,
+				CAD010441982EF6A00BC6EF7 /* RCSNJKWebViewProgressViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +459,7 @@
 		};
 		CAB68AF01982B60600916EE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04869B37281A468E938BBCB8 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +473,7 @@
 		};
 		CAB68AF11982B60600916EE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04869B37281A468E938BBCB8 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +544,7 @@
 				CAB68AF11982B60600916EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAB68AF21982B60600916EE2 /* Build configuration list for PBXNativeTarget "RACSupportExamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +553,7 @@
 				CAB68AF41982B60600916EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

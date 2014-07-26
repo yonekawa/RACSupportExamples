@@ -1,5 +1,5 @@
 //
-//  RCSViewController.h
+//  UIButton+MeijinSupport.h
 //  RACSupportExamples
 //
 //  Created by Kenichi Yonekawa on 7/26/14.
@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ReactiveCocoa/RACSignal+Operations.h>
 
-@interface RCSViewController : UIViewController
-
+@interface UIButton (MeijinSupport)
+- (RACSignal *)rac_16shotSignal;
 @end
