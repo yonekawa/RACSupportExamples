@@ -12,6 +12,8 @@
 #import <NJKWebViewProgress/NJKWebViewProgressView.h>
 #import "NJKWebViewProgress+RACSupport.h"
 
+#import <ReactiveCocoa/RACEXTScope.h>
+
 @interface RCSNJKWebViewProgressViewController ()
 @property (nonatomic, weak) IBOutlet UIWebView *webView;
 @property (nonatomic, strong) NJKWebViewProgress *progressProxy;
@@ -25,8 +27,11 @@
     [super viewDidLoad];
     
     self.progressProxy = [[NJKWebViewProgress alloc] init];
+
+    @weakify(self);
     [self.progressProxy.rac_updateProgressSignal
       subscribeNext:^(NSNumber *progress) {
+        @strongify(self);
         [self.progressView setProgress:[progress floatValue]
                               animated:NO];
      }];
