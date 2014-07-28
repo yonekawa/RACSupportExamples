@@ -8,24 +8,19 @@
 
 #import "SVProgressHUD+RACSupport.h"
 #import <ReactiveCocoa/NSNotificationCenter+RACSupport.h>
-#import <ReactiveCocoa/RACReplaySubject.h>
-#import <ReactiveCocoa/RACDisposable.h>
+#import <ReactiveCocoa/RACSignal+Operations.h>
 
 @implementation SVProgressHUD (RACSupport)
 
 + (RACSignal *)rac_dismiss
 {
-    RACReplaySubject *subject = [RACReplaySubject subject];
-	[subject setNameWithFormat:@"%@ +rac_dismiss", self];
-
     [SVProgressHUD dismiss];
 
-    RACSignal *signal = [[NSNotificationCenter defaultCenter] rac_addObserverForName:SVProgressHUDDidDisappearNotification object:nil];
-    __block RACDisposable *subscription = [signal subscribeNext:^(NSNotification *notification) {
-        [subject sendCompleted];
-        [subscription dispose];
-    }];
-    return subject;
+    return [[[[[NSNotificationCenter defaultCenter]
+        rac_addObserverForName:SVProgressHUDDidDisappearNotification object:nil]
+        take:1]
+        ignoreValues]
+        setNameWithFormat:@"%@ +rac_dismiss", self];
 }
 
 @end

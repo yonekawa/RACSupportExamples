@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ReactiveCocoa/RACSignal+Operations.h>
+
+@class RACSignal;
 
 @interface UIButton (MeijinSupport)
 - (RACSignal *)rac_16shotSignal;

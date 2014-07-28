@@ -21,8 +21,7 @@
 {
     [super viewDidLoad];
 
-    [[[self.meijinButton rac_16shotSignal]
-      deliverOn:[RACScheduler mainThreadScheduler]]
+    [[self.meijinButton rac_16shotSignal]
       subscribeNext:^(NSNumber *shotCount) {
           NSString *title = [NSString stringWithFormat:@"%zd Shot!", [shotCount integerValue]];
           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title

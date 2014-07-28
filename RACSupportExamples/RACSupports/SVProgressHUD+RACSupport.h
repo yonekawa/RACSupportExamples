@@ -7,7 +7,8 @@
 //
 
 #import "SVProgressHUD.h"
-#import "RACSignal+Operations.h"
+
+@class RACSignal;
 
 @interface SVProgressHUD (RACSupport)
 + (RACSignal *)rac_dismiss;

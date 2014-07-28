@@ -8,6 +8,7 @@
 
 #import "RCSSVProgressHUDViewController.h"
 
+#import <ReactiveCocoa/RACSignal.h>
 #import <SVProgressHUD.h>
 #import "SVProgressHUD+RACSupport.h"
 
