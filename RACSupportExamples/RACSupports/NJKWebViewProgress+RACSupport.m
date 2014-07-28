@@ -31,7 +31,7 @@ static void RACUseDelegateProxy(NJKWebViewProgress *self)
 	return proxy;
 }
 
-- (RACSignal *)rac_updateProgressSignal
+- (RACSignal *)rac_updateSignal
 {
 	RACSignal *signal = [[[[self.rac_delegateProxy signalForSelector:@selector(webViewProgress:updateProgress:)]
                            reduceEach:^(NJKWebViewProgress *webViewProgress, NSNumber *progress) {
@@ -39,7 +39,7 @@ static void RACUseDelegateProxy(NJKWebViewProgress *self)
                            }]
                           takeUntil:self.rac_willDeallocSignal]
                          setNameWithFormat:@"%@ -rac_updateProgressSignal", [self rac_description]];
-    
+
 	RACUseDelegateProxy(self);
 	return signal;
 }

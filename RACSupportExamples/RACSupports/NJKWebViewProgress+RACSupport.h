@@ -13,5 +13,5 @@
 
 @interface NJKWebViewProgress (RACSupport)
 @property (nonatomic, strong, readonly) RACDelegateProxy *rac_delegateProxy;
-- (RACSignal *)rac_updateProgressSignal;
+- (RACSignal *)rac_updateSignal;
 @end

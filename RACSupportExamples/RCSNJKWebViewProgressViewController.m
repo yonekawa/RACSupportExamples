@@ -29,7 +29,7 @@
     self.progressProxy = [[NJKWebViewProgress alloc] init];
 
     @weakify(self);
-    [self.progressProxy.rac_updateProgressSignal
+    [self.progressProxy.rac_updateSignal
       subscribeNext:^(NSNumber *progress) {
         @strongify(self);
         [self.progressView setProgress:[progress floatValue]

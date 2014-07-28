@@ -8,6 +8,8 @@
 
 #import "RCSMenuViewController.h"
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
 @interface RCSMenuViewController ()
 @property (nonatomic, strong) NSArray *menus;
 @end

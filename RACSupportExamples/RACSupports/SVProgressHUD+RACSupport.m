@@ -19,6 +19,7 @@
 	[subject setNameWithFormat:@"%@ +rac_dismiss", self];
 
     [SVProgressHUD dismiss];
+
     RACSignal *signal = [[NSNotificationCenter defaultCenter] rac_addObserverForName:SVProgressHUDDidDisappearNotification object:nil];
     __block RACDisposable *subscription = [signal subscribeNext:^(NSNotification *notification) {
         [subject sendCompleted];
