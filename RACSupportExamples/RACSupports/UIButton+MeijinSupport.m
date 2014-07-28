@@ -8,9 +8,9 @@
 
 #import "UIButton+MeijinSupport.h"
 #import <ReactiveCocoa/RACCommand.h>
-#import <ReactiveCocoa/RACReplaySubject.h>
 #import <ReactiveCocoa/RACScheduler.h>
-#import <ReactiveCocoa/UIButton+RACCommandSupport.h>
+#import <ReactiveCocoa/RACSignal+Operations.h>
+#import <ReactiveCocoa/UIControl+RACSignalSupport.h>
 
 @implementation UIButton (MeijinSupport)
 
@@ -18,25 +18,22 @@ static const NSInteger kMaxShotCount = 16;
 
 - (RACSignal *)rac_16shotSignal
 {
-    __block NSInteger shotCount = 0;
+    RACSignal *tapped = [self rac_signalForControlEvents:UIControlEventTouchUpInside];
+    RACSignal *resetTimer = [RACSignal interval:1.0f onScheduler:[RACScheduler scheduler]];
 
-    RACReplaySubject *subject = [RACReplaySubject subject];
-	[subject setNameWithFormat:@"%@ -rac_16shotSignal", self];
-
-    [[RACSignal interval:1.0f onScheduler:[RACScheduler scheduler]] subscribeNext:^(NSDate *date) {
-        shotCount = 0;
-    }];
-
-    self.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-        shotCount++;
-        NSLog(@"%zd", shotCount);
-        if (shotCount == kMaxShotCount) {
-            [subject sendNext:@(shotCount)];
-            shotCount = 0;
-        }
-        return [RACSignal empty];
-    }];
-    return subject;
+    return [[[[[[tapped
+        scanWithStart:@0 reduce:^(NSNumber *running, id next) {
+            NSInteger shotCount = running.integerValue + 1;
+            NSLog(@"%zd", shotCount);
+            return @(shotCount);
+        }]
+        // Restarts shot count from 0 if a second has passed.
+        // In addition, reset timer should start after 1st button tap.
+        takeUntil:[[[tapped take:1] ignoreValues] concat:resetTimer]]
+        skip:(kMaxShotCount - 1)]
+        take:1] // Completes this period.
+        repeat] // Then, starts a new period.
+        setNameWithFormat:@"%@ -rac_16shotSignal", self];
 }
 
 @end
