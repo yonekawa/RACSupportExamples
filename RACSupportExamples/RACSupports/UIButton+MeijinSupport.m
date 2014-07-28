@@ -22,7 +22,8 @@ static const NSInteger kMaxShotCount = 16;
     RACSignal *resetTimer = [RACSignal interval:1.0f onScheduler:[RACScheduler scheduler]];
 
     return [[[[[[tapped
-        scanWithStart:@0 reduce:^(NSNumber *running, id next) {
+        scanWithStart:@0
+        reduce:^(NSNumber *running, id next) {
             NSInteger shotCount = running.integerValue + 1;
             NSLog(@"%zd", shotCount);
             return @(shotCount);
